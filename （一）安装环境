@@ -1,0 +1,38 @@
+大体思路：
+
+1.首先需要部署PHP环境（使用phpstudy工具集成配置安装）
+2.然后安装burpsuite进行拦截抓包
+
+具体配置：
+
+1.下载phpstudy
+网址：http://phpstudy.php.cn/   （需要注册账号）
+下载完成后就正常安装，启动环境就可以，只有环境启动了，DVWA才能正常启动
+
+2.安装DVWA
+下载地址：http://www.dvwa.co.uk/   （mac无法配置）
+  2.1靶机配置方案：
+    2.1.1方案一：安装虚拟机，然后在虚拟机里面进行配置靶机
+    2.1.2方案二：直接在本地上配置靶机，操作难度更低，但是会有风险，在不使用的情况下一定要把数据库关掉
+  
+  2.2配置文件：
+    2.2.1要把DVWA文件解压后放在phpstudy软件中的WWW文件里面
+    2.2.2记得还需要修改里面的文件
+    参考博客：https://jingyan.baidu.com/article/a3a3f81117e5f18da2eb8a09.html
+             https://baijiahao.baidu.com/s?id=1622067219959057383&wfr=spider&for=pc
+             另一种就是安装虚拟机,参考博客：
+             https://www.freebuf.com/sectool/102661.html
+    
+3.进入DVWA网址
+  点击进入网址：127.0.0.1/dvwa）（phpstudy中WWW文件解压出的dvwa文件名字）/login.php
+  默认账号：admin，密码：password
+  
+4.配置burpsuite
+
+5.抓包
+  参考博客：https://blog.csdn.net/weixin_38948797/article/details/79111566
+
+
+
+
+
